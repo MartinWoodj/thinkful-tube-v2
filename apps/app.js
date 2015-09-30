@@ -15,6 +15,17 @@
   });
 */
   
+/*
+var myResults;
+
+for(i = 0; i < results.items.length; i++){
+    myResults = myResults + "<div> <img src='" + results.items[i].snippet.urlthing + "'></div>";
+}
+
+$('#search-container').html(myResults);
+
+*/
+
 $(document).ready(function(){
 	$('#search-button').click(function(e){
 		var search = $('#query').val()
