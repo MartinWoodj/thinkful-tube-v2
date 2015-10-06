@@ -1,4 +1,12 @@
 $(document).ready(function(){
+	$('.search-button').keyup(function(e){
+		if(e.keyCode == 13) {
+			var search = $('.query').val()
+			console.log();
+			query(search);
+		};
+	});	
+	
 	$('.search-button').click(function(e){
 		var search = $('.query').val()
 		console.log(search);
@@ -20,7 +28,7 @@ function showResults(results){
 		myResults += [
 			"<div>",
 				"<a href='http://youtube.com/watch?v=" + results[i].id.videoId +"'>",
-					"<img src='" + results[i].snippet.thumbnails.default.url + "'>",
+					"<img src='" + results[i].snippet.thumbnails.high.url + "'>",
 				"</a>",
 			"</div>"
 		].join('');

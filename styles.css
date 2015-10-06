@@ -30,8 +30,8 @@ body {
 }
 
 .title {
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
 	font-size: 84px;
 	color: #6799FF;
 }
@@ -39,11 +39,24 @@ body {
 #search-results img {
 	width: 280px;
 	height: 180px;
+	padding: 10px;
 }
 
 #search-results {
-	float: left;
-	width: 560px;
-/* 	border: solid fuchsia; */
+	margin: 0 auto;
+	padding-top: 15px;
+	width: 700px;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	text-align: center;
+}
+
+#footer {
+	height: 100px;
+	background-color: #2C3E50;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	
 }
